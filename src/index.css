@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.light {
+  @apply bg-white text-gray-900;
+}
+
+.nav-link {
+  @apply px-4 py-2 rounded-md transition-colors duration-200;
+}
+
+.nav-link:hover {
+  @apply bg-primary-600 text-white;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors duration-200;
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-8 text-center;
+}
